@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TO DO APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     1- Fecha
@@ -17,9 +19,19 @@
         </div>
         <div class="homework">
             <input type="text" id="input" placeholder="Agrega una tarea nueva...">
-            <i class="fa-solid fa-circle-plus"></i>
+            <i id="enviar" class="fas fa-plus-circle"></i>
         </div>
-        <div class="tasks"></div>
+        <div class="tasks">
+            <h3>Estas son tus pendientes:</h3>
+            <ul id="lista">
+                <li>
+                    <i id="0" class="far fa-circle co" data-="realizado"></i>
+                    <p class="text">Introducir una tarea</p>
+                    <i id="0" class="fas fa-trash de" data-="eliminado"></i>
+                </li>
+            </ul>
+        </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
