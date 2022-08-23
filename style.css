@@ -48,6 +48,7 @@ body{
     height: 70px;
     display: flex;
     align-items: center;
+    margin: 30px 0px;
     padding: 10px;
     gap: 70px;
 }
@@ -62,6 +63,55 @@ body{
 
 .homework i{
     font-size: 50px;
-    color: var(--purple);
+    color: var(--blue-dark);
 }
 
+.homework i:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.homework input::placeholder{
+    font-size: 1.1rem;
+    color: var(--blue-dark);   
+}
+
+/*TAREAS*/
+
+.task{
+    color: var(--white);
+}
+
+.task h3{
+    color: var(--white);
+    margin-bottom: 20px;
+}
+
+.task li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom,var(--blue-dark),var(--green));
+    border-radius: 12px;
+    border: none;
+    padding: 10px;
+    margin: 5px 0px;
+}
+
+.task > ul p{
+    font-size: 1.2rem;
+}
+
+.task i{
+    font-size: 25px;
+}
+
+.task i:hover{
+    color: var(--blue-light);
+    cursor: pointer;
+}
+
+.line-trough{
+    text-decoration: line-through;
+    color: var(--blue-light);
+}
